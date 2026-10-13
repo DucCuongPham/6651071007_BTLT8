@@ -1,0 +1,115 @@
+
+/* Thiết lập chung */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Liên kết trên thanh điều hướng */
+.nav-link {
+    color: #57534e;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #b45309;
+}
+
+/* Menu trên điện thoại */
+.mobile-link {
+    display: block;
+    padding: 12px 0;
+    color: #57534e;
+    font-weight: 600;
+    border-bottom: 1px solid #f5f5f4;
+}
+
+.mobile-link:hover {
+    color: #b45309;
+}
+
+/* Hình ảnh banner */
+.hero-section {
+    background: linear-gradient(135deg, #fffbeb, #fef3c7);
+}
+
+.hero-image {
+    transition: transform 0.4s;
+}
+
+.hero-image:hover {
+    transform: scale(1.02);
+}
+
+/* Thẻ bánh */
+.cake-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cake-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.cake-image {
+    transition: transform 0.4s;
+}
+
+.cake-card:hover .cake-image {
+    transform: scale(1.04);
+}
+
+/* Nhãn và ô nhập của form */
+.form-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #44403c;
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #d6d3d1;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #292524;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-input:focus {
+    border-color: #b45309;
+    box-shadow: 0 0 0 3px rgba(180, 83, 9, 0.12);
+}
+
+textarea.form-input {
+    resize: vertical;
+}
+
+/* Nút quay lại đầu trang */
+#back-to-top {
+    cursor: pointer;
+    font-size: 24px;
+    border: none;
+    z-index: 40;
+}
+
+/* Responsive: điện thoại */
+@media (max-width: 640px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-image {
+        height: 280px;
+    }
+}
