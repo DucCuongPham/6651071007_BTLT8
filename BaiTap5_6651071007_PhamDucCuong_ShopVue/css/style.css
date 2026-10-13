@@ -1,0 +1,87 @@
+
+/* Cấu hình chung */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Banner */
+.hero-bg {
+    background: linear-gradient(135deg, #eff6ff, #dbeafe);
+}
+
+/* Ô tìm kiếm */
+.search-input {
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Thẻ sản phẩm */
+.product-card {
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(15, 23, 42, 0.12);
+}
+
+.product-image {
+    transition: transform 0.3s;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.03);
+}
+
+/* Nút danh mục */
+.category-button {
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* Nút thêm sản phẩm */
+.add-button {
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.add-button:hover {
+    transform: translateY(-1px);
+}
+
+/* Nút tăng giảm số lượng */
+.quantity-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background: #f8fafc;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.quantity-button:hover {
+    background: #dbeafe;
+}
+
+/* Điện thoại */
+@media (max-width: 640px) {
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
